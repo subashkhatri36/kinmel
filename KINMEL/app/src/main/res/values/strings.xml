@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kinmel</string>
+    <string name="facebook_app_id">157145759039605</string>
+    <string name="fb_login_protocol_scheme">fb157145759039605</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_subtitle">user@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="ADMOB_APP_ID">ca-app-pub-5946802346170399/7879975662</string>
+    <string name="interstitalapp_id">ca-app-pub-5946802346170399/8809913955</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="stateArray">
+        <item>State 1</item>
+        <item>State 2</item>
+        <item>State 3</item>
+        <item>State 4</item>
+        <item>State 5</item>
+        <item>State 6</item>
+        <item>State 7</item>
+    </string-array>
+</resources>

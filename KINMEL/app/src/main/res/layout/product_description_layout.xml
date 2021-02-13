@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_details_tabs_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/textwhite"
+    android:elevation="3dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/product_details_tablayout_tab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#f4f3f3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="#807f7f">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specification" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Details" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/product_detail_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_details_tablayout_tab" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CC0000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FAF4F4</color>
+    <color name="buttonGreen">#669900</color>
+    <color name="buttonRed">#FF0000</color>
+    <color name="buttonBlue">#003366</color>
+    <color name="buttonbrown">#333333</color>
+    <color name="buttonOrange">#FF6600</color>
+    <color name="textwhite">#fafafa</color>
+    <color name="successgree">#3EB255</color>
+    <color name="recyclerviewbackground">#EFE9E9</color>
+    <color name="abce">#0e0e0e</color>
+
+</resources>

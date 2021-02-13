@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_recyclerview_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_recyclerview_menu">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homepage_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginBottom="8dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/no_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:src="@drawable/nointernet"
+        app:layout_constraintBottom_toBottomOf="@+id/refresh_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/refreshbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:stateListAnimator="@null"
+        android:text="Refresh to Connect"
+        android:textAllCaps="false"
+        android:textColor="@color/textwhite"
+        app:layout_constraintBottom_toBottomOf="@+id/no_internet_connection"
+        app:layout_constraintEnd_toEndOf="@+id/refresh_layout"
+        app:layout_constraintStart_toStartOf="@+id/no_internet_connection" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
